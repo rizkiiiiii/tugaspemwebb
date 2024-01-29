@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image/w3.css">
+    <title>Document</title>
+    <script>
+        function openKota(namakota) {
+            var i;
+            var x = document.getElementsByClassName("kota");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namakota).style.display = "block";
+        }
+    </script>
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar w3-grey">
+        <button class="w3-bar-item w3-button" onclick="openKota('Atas')" align="right">Home</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Bawah')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Kiri')">BWM 330i</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Kanan')">Mercy AMG</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Mendekat')">Mercy G class</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Jenis Mobil Lainnya</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openKota('Kegelapan')">porsche 911</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Menghilang')">mclaren</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Putar')">ferarri S8</button>
+            </div>
+        </div>
+    </div>
+    <div id="Atas" class="w3-container kota w3-animate-top" style="display:none" align="center">
+        <h2>Mobil Pertama Di Dunia</h2>
+        <br>
+        <p>
+            Di urutan pertama tentu nama ini wajib disebutkan. Karl Benz membangun mobil pertamanya pada tahun 1885 dan ia
+            mematenkannya pada Januari 1886. Nama Mercedes sebenarnya belum digunakan hingga tahun 1901. Mobil itu dulunya disebut
+            Patent Motorwagen.
+            
+            Mobil pertama Benz ini hanya memiliki 3 roda dan mengusung mesin satu silinder 954 cc yang mampu mengasilkan tenga 0,75
+            bhp. Pada tahun 1893 Benz pertama kali membuat mobil dengan empat roda yang diberi nama Viktoria. Viktoria ditenagai
+            mesin 1745 cc bertenaga 3 bhp
+        </p>
+        <img src="image/mobilprtama.jpeg" width="300">
+    </div>
+    <div id="Bawah" class="w3-container kota w3-animate-bottom w3-card-4" style="display:none" align="center">
+        <img src="image/profile.jpg" width="300">
+        <div class="w3-container w3-center">
+            <p>Muhamad Rizki Fadilah</p>
+            <p>10123085</p>
+            <p>iF-3</p>
+        </div>
+    </div>
+    <div id="Kiri" class="w3-container kota w3-animate-left" style="display:none" align="center">
+        <h2>Jenis Mobil</h2>
+        BMW 330i
+        <br>
+        <p></p>
+        <img src="image/3301.jpg" width="500">
+    </div>
+    <div id="Kanan" class="w3-container kota w3-animate-right" style="display:none" align="center">
+        <h2>Jenis Mobil</h2>
+        Mercy AMG
+        <br>
+        <p></p>
+        <img src="image/amg1.jpg" width="500">
+    </div>
+    <div id="Mendekat" class="w3-container kota w3-animate-zoom" style="display:none" align="center">
+        <h2>Jenis Mobil</h2>
+        Mercy G Class
+        <br>
+        <p></p>
+        <img src="image/gclass.jpg" width="500">
+    </div>
+    <div id="Kegelapan" class="w3-container kota w3-animate-fading" style="display:none" align="center">
+        <h2>Jenis Mobil</h2>
+        porsche 911
+        <br>
+        <p></p>
+        <img src="image/porsche911.jpg" width="500">
+    </div>
+    <div id="Menghilang" class="w3-container kota w3-animate-opacity" style="display:none" align="center">
+        <h2>Jenis Mobil</h2>
+        McLaren
+        <br>
+        <p></p>
+        <img src="image/senna.jpg" width="500">
+    </div>
+    <div id="Putar" class="w3-container kota w3-spin" style="display:none">
+        <h2>Jenis Mobil</h2>
+        Ferarri S8
+        <br>
+        <p></p>
+        <img src="image/sp8.jpg" width="500">
+    </div>
+    <footer>
+        <p>&copy; 2024 Web Mobil. All rights reserved.</p>
+    </footer>
+</body>
+</html>
